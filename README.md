@@ -12,4 +12,4 @@ This repository contains my GenAI and LangChain practice projects, where I exper
 
 🔬 Other Experiments – Step-by-step practice with prompts, chains, memory, and integrations.
 
-This repo is mainly for learning and experimenting, so code may be simple and exploratory. I’ll keep updating it as I learn more advanced GenAI and LangChain concepts. 🚀
+This repo is mainly for learning and experimenting, so code may be simple and exploratory. I’ll keep updating it as I learn more advanced GenAI and LangChain concepts.  🚀
