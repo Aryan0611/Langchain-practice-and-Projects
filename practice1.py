@@ -24,7 +24,6 @@ second_prompt_template = PromptTemplate(
     template="When was {person} born?"
 )
 chain2 = LLMChain(llm=llm, prompt=second_prompt_template, verbose=True, output_key="DOB")
-
 # Sequential chain
 parent_chain = SequentialChain(
     chains=[chain, chain2],
@@ -40,3 +39,4 @@ if input_text:
     st.write(result["person"])
     st.write("Date of Birth:")
     st.write(result["DOB"])
+
