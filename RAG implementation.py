@@ -49,6 +49,7 @@ if question and st.session_state.vs:
         return_source_documents=True,
         verbose=True,
     )
+    
     with st.spinner("Thinking..."):
         res = qa.invoke({"query": question})
     st.subheader("Answer")
@@ -58,4 +59,5 @@ if question and st.session_state.vs:
     for i, doc in enumerate(res["source_documents"], 1):
         st.write(f"{i}. {doc.metadata.get('source')} - page {doc.metadata.get('page')}")
 else:
+
     st.info("Upload PDFs and click 'Build knowledge base' to start.")
